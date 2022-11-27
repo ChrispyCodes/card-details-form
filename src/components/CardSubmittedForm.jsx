@@ -10,7 +10,7 @@ export default function CardSubmittedForm({
   const resetForm = () => {
     setFormData({
       name: null,
-      number: null,
+      cardNumber: null,
       mm: null,
       yy: null,
       cvc: null,
@@ -28,7 +28,7 @@ export default function CardSubmittedForm({
   };
 
   return (
-    <div>
+    <div className="cardSubmitted">
       <img src={iconComplete} alt="complete" />
       <p>Thank You!</p>
       <p>We've added your card details</p>

@@ -5,7 +5,7 @@
   margin-right: auto;
 }
 
-.cardSubmitted p {
+.cardSubmitted p:first-of-type {
   font-size: 28px;
   text-transform: uppercase;
   margin-bottom: 0;

@@ -57,6 +57,14 @@
   border: 2px solid hsl(249, 99%, 64%);
 }
 
+.cardForm input:focus {
+  border: 2px solid var(--Verdarviolet);
+}
+
+.cardForm input:focus-visible {
+  outline: 0;
+}
+
 .labeldate {
   width: 50%;
 }
