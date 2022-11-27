@@ -40,6 +40,7 @@ function App() {
             <CardSubmitted
               setFormData={setFormData}
               formValidation={formValidation}
+              setErrors={setErrors}
             />
           ) : (
             <CardForm

@@ -1,7 +1,12 @@
 import React from "react";
 import iconComplete from "../assets/icon-complete.svg";
+import "../styles/CardSubmitted.css";
 
-export default function CardSubmittedForm({ setFormData, formValidation }) {
+export default function CardSubmittedForm({
+  setFormData,
+  formValidation,
+  setErrors,
+}) {
   const resetForm = () => {
     setFormData({
       name: null,
@@ -9,7 +14,9 @@ export default function CardSubmittedForm({ setFormData, formValidation }) {
       mm: null,
       yy: null,
       cvc: null,
-      errorMessage: {
+    });
+    setErrors({
+      errorMessages: {
         name: "",
         cardNumber: "",
         mm: "",
